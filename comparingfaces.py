@@ -24,6 +24,11 @@ b=[img1,img2,img3]
 image=fr.load_image_file("/Users/macbookair/Desktop/kurslar/face recognition/resimler/ab.jpeg")
 img=fr.face_encodings(image)[0]
 
+"""faceloc=fr.face_locations(image,number_of_times_to_upsample=2)
+ALLOWS US TO DOUBLE THE SIZE OF THE PHOTO AND GET A MORE PRECISE RESULT BC OF LOW RESOLUTION
+"""
+
+
 for i in img:
     a = fr.compare_faces(b,img)
     name=""
