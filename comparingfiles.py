@@ -34,5 +34,5 @@ for i in img:
     elif a[2]:
         name="kemal"
     else:
-        name="we don't know who's"
-print("{} is in the photo.".format(name))
+        name="we don't know who"
+print("{}'s in the photo.".format(name))
